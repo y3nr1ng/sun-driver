@@ -7,7 +7,7 @@
 #define BRRL_192 52    // for 16MHZ
 #elif (F_CPU == 8000000)
 #define BRRL_9600 52
-#define BRRL_192 26    
+#define BRRL_192 26
 #endif
 
 // Debug printing functions - handy!
@@ -38,4 +38,3 @@ void ROM_putstring(const char *str, uint8_t nl);
 void delay_ms(unsigned char ms);
 void delay_10us(uint8_t us);
 void delay_s(uint8_t s);
-

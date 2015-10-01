@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    // configure i/o
+	// configure i/o
 
-    // timer initialize.
-    return 0;
+	// timer initialize.
+	return 0;
 }

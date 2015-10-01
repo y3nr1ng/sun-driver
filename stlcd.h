@@ -16,7 +16,7 @@
 
 #define CMD_SET_ALLPTS_NORMAL 0xA4
 #define CMD_SET_ALLPTS_ON  0xA5
-#define CMD_SET_BIAS_9 0xA2 
+#define CMD_SET_BIAS_9 0xA2
 #define CMD_SET_BIAS_7 0xA3
 
 #define CMD_RMW  0xE0
@@ -54,4 +54,3 @@ void clear_buffer(uint8_t *buffer);
 void write_buffer(uint8_t *buffer);
 
 void testdrawbitmap(uint8_t *buff, const uint8_t *bitmap, uint8_t w, uint8_t h);
-
