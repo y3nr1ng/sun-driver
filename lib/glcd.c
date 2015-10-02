@@ -22,12 +22,11 @@ void clear_screen(void)
 	#endif
 }
 
-// the most basic function, set a single pixel
+// Set a single pixel.
 void setpixel(uint8_t *buf, uint8_t x, uint8_t y, uint8_t color) {
-	if ((x >= LCDWIDTH) || (y >= LCDHEIGHT))
+	if ((x >= LCD_WIDTH) || (y >= LCD_HEIGHT))
 		return;
 
-	// x is which column
 	if (color)
 		buf[x+ (y/8)*128] |= _BV(7-(y%8));
 	else
