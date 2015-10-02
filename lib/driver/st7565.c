@@ -65,7 +65,7 @@ void st7565_clear_screen(void)
 
 void st7565_clear_buffer(uint8_t *buf)
 {
-
+	memset(buf, 0, 1024);
 }
 
 void st7565_write_buffer(uint8_t *buf)
