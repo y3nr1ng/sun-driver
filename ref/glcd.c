@@ -51,8 +51,6 @@ void drawbitmap(uint8_t *buff, uint8_t x, uint8_t y,
 			}
 		}
 	}
-
-
 }
 
 void drawstring(uint8_t *buff, uint8_t x, uint8_t line, uint8_t *c) {
@@ -69,11 +67,10 @@ void drawstring(uint8_t *buff, uint8_t x, uint8_t line, uint8_t *c) {
 		if (line >= (LCDHEIGHT/8))
 			return;           // ran out of space :(
 	}
-
 }
 
 void drawchar(uint8_t *buff, uint8_t x, uint8_t line, uint8_t c) {
-	for (uint8_t i =0; i<5; i++ )
+	for (uint8_t i=0; i<5; i++ )
 	{
 		buff[x + (line*128) ] = pgm_read_byte(font+(c*5)+i);
 		x++;
@@ -203,7 +200,6 @@ void drawcircle(uint8_t *buff,
 	}
 }
 
-
 // draw a circle
 void fillcircle(uint8_t *buff,
                 uint8_t x0, uint8_t y0, uint8_t r,
@@ -242,7 +238,6 @@ void fillcircle(uint8_t *buff,
 		}
 	}
 }
-
 
 // clear everything
 void clear_buffer(uint8_t *buff) {
